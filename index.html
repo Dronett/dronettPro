@@ -1,60 +1,55 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dronet'Pro – Nettoyage par drone</title>
-  <meta name="description" content="Dronet'Pro : nettoyage et inspection de bâtiments par drone. Rapide, sécurisé, écoresponsable.">
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-wrap">
-      <div class="brand"><div class="brand-mark">DP</div><div class="brand-name">Dronet'Pro</div></div>
-      <nav class="nav">
-        <a href="index.html">Accueil</a>
-        <a href="services.html">Services</a>
-        <a href="galerie.html">Galerie</a>
-        <a class="btn btn-primary" href="contact.html">Devis</a>
-      </nav>
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Dronett'Pro – Nettoyage & inspection par drone</title>
+<meta name="description" content="Dronett'Pro : nettoyage et inspection de bâtiments par drone. Rapide, sécurisé, écoresponsable."></head><body>
+<header class="site-header"><div class="container header-wrap">
+<div class="brand"><div class="brand-mark">DP</div><div class="brand-name">Dronett'Pro</div></div>
+<nav class="nav"><a href="index.html">Accueil</a><a href="services.html">Services</a><a href="galerie.html">Galerie</a><a href="contact.html">Contact</a><a href="mentions.html">Mentions</a><a class="btn btn-primary" href="#" data-open-modal>Demander un devis</a></nav>
+</div></header>
+<section class="hero"><div class="overlay"></div><div class="container hero-content">
+<h1 class="reveal">Nettoyage de bâtiments par drone</h1>
+<p class="reveal">Innovation, sécurité et performance pour vos façades, toitures et vitrages.</p>
+<a class="btn btn-primary reveal" href="#" data-open-modal>Demander un devis</a>
+</div></section>
+<section class="section"><div class="container">
+<h2 class="section-title reveal">Pourquoi Dronett'Pro ?</h2>
+<p class="lead reveal">Interventions rapides sans nacelle ni échafaudage, réduction des risques humains et optimisation des coûts.</p>
+<div class="cards">
+<article class="card reveal"><h3>Rapide</h3><p>Mise en place en quelques minutes et exécution efficace.</p></article>
+<article class="card reveal"><h3>Sécurisé</h3><p>Procédures strictes et périmètres balisés. Télépilotes certifiés.</p></article>
+<article class="card reveal"><h3>Écoresponsable</h3><p>Consommation d’eau optimisée et produits adaptés.</p></article>
+</div></div></section>
+<section class="section cta"><div class="container cta-wrap"><div>
+<h2 class="reveal">Besoin d’un diagnostic ?</h2>
+<p class="lead reveal">Nous vous répondons sous 24h avec une estimation claire.</p></div>
+<a class="btn btn-primary reveal" href="#" data-open-modal>Obtenir un devis</a></div></section>
+<footer class="site-footer"><div class="container footer-wrap"><small>© 2025 Dronett'Pro</small><small>Nettoyage & inspection par drone</small></div></footer><script src="assets/js/script.js"></script>
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-header">
+      <h3 id="modal-title">Demander un devis</h3>
+      <button class="modal-close" aria-label="Fermer" data-close-modal>&times;</button>
     </div>
-  </header>
-  <section class="hero">
-    <div class="overlay"></div>
-    <div class="container hero-content">
-      <h1 class="reveal">Nettoyage de bâtiments par drone</h1>
-      <p class="reveal">Innovation, sécurité et performance pour vos façades, toitures et vitrages.</p>
-      <a class="btn btn-primary reveal" href="contact.html">Demander un devis</a>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title reveal">Pourquoi Dronet'Pro ?</h2>
-      <p class="lead reveal">Interventions rapides sans nacelle ni échafaudage, réduction des risques humains et optimisation des coûts.</p>
-      <div class="cards">
-        <article class="card reveal"><h3>Rapide</h3><p>Mise en place en quelques minutes et exécution efficace.</p></article>
-        <article class="card reveal"><h3>Sécurisé</h3><p>Procédures strictes et périmètres balisés. Télépilotes certifiés.</p></article>
-        <article class="card reveal"><h3>Écoresponsable</h3><p>Consommation d’eau optimisée et produits adaptés.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section cta">
-    <div class="container cta-wrap">
-      <div>
-        <h2 class="reveal">Besoin d’un diagnostic ?</h2>
-        <p class="lead reveal">Nous vous répondons sous 24h avec une estimation claire.</p>
-      </div>
-      <a class="btn btn-primary reveal" href="contact.html">Obtenir un devis</a>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container footer-wrap">
-      <small>© 2025 Dronet'Pro</small><small>Nettoyage & inspection par drone</small>
-    </div>
-  </footer>
-  <script src="assets/js/app.js"></script>
-</body>
-</html>
+    <form class="form" id="quote-form" action="" method="POST">
+      <input type="text" name="nom" placeholder="Nom / Société" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="tel" placeholder="Téléphone (optionnel)">
+      <select name="type_batiment" required>
+        <option value="">Type de bâtiment</option>
+        <option>Immeuble</option>
+        <option>Maison</option>
+        <option>Bureaux</option>
+        <option>Entrepôt</option>
+        <option>Autre</option>
+      </select>
+      <input type="number" name="surface" min="0" step="1" placeholder="Surface estimée (m²)">
+      <input type="text" name="ville" placeholder="Ville / Localisation">
+      <textarea name="message" rows="5" placeholder="Votre besoin, contraintes, délais…"></textarea>
+      <button class="btn btn-primary" type="submit">Envoyer</button>
+      <div class="note" id="form-status"></div>
+      <div class="note">Astuce : créez votre endpoint sur Formspree.io et collez son URL dans l’attribut <code>action</code> du formulaire.</div>
+    </form>
+  </div>
+</div>
+</body></html>

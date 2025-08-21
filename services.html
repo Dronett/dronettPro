@@ -1,65 +1,51 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Services – Dronet'Pro</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-wrap">
-      <div class="brand"><div class="brand-mark">DP</div><div class="brand-name">Dronet'Pro</div></div>
-      <nav class="nav">
-        <a href="index.html">Accueil</a>
-        <a href="services.html">Services</a>
-        <a href="galerie.html">Galerie</a>
-        <a class="btn btn-primary" href="contact.html">Devis</a>
-      </nav>
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Dronett'Pro – Nettoyage & inspection par drone</title>
+<meta name="description" content="Dronett'Pro : nettoyage et inspection de bâtiments par drone. Rapide, sécurisé, écoresponsable."><title>Services – Dronett'Pro</title></head><body>
+<header class="site-header"><div class="container header-wrap">
+<div class="brand"><div class="brand-mark">DP</div><div class="brand-name">Dronett'Pro</div></div>
+<nav class="nav"><a href="index.html">Accueil</a><a href="services.html">Services</a><a href="galerie.html">Galerie</a><a href="contact.html">Contact</a><a href="mentions.html">Mentions</a><a class="btn btn-primary" href="#" data-open-modal>Demander un devis</a></nav>
+</div></header>
+<section class="section"><div class="container">
+<h1 class="section-title reveal">Nos services</h1>
+<p class="lead reveal">Prestations sur-mesure pour façades, toitures, panneaux, vitrages et bardages.</p>
+<div class="cards">
+<article class="card reveal"><h3>Nettoyage de façades</h3><p>Élimination des salissures, lichens et dépôts avec précision.</p></article>
+<article class="card reveal"><h3>Toitures & panneaux solaires</h3><p>Rendement optimisé, accès sécurisés et rapides.</p></article>
+<article class="card reveal"><h3>Vitrages & bardages</h3><p>Finition impeccable pour grandes surfaces.</p></article>
+<article class="card reveal"><h3>Inspection & reporting</h3><p>Photos/vidéos HD, rapports clairs et plan d’action.</p></article>
+<article class="card reveal"><h3>Interventions industrielles</h3><p>Sites sensibles, périmètres balisés, procédures strictes.</p></article>
+<article class="card reveal"><h3>Devis & diagnostic</h3><p>Évaluation rapide sur dossier ou repérage sur site.</p></article>
+</div>
+<div class="section" style="padding-top:34px"><img class="reveal" src="assets/img/orange.jpg" alt="Drone de présentation"></div>
+</div></section>
+<footer class="site-footer"><div class="container footer-wrap"><small>© 2025 Dronett'Pro</small><small>Nettoyage & inspection par drone</small></div></footer><script src="assets/js/script.js"></script>
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-header">
+      <h3 id="modal-title">Demander un devis</h3>
+      <button class="modal-close" aria-label="Fermer" data-close-modal>&times;</button>
     </div>
-  </header>
-
-  <section class="section">
-    <div class="container">
-      <h1 class="section-title reveal">Nos services</h1>
-      <p class="lead reveal">Prestations sur-mesure pour façades, toitures, panneaux, vitrages et bardages.</p>
-      <div class="cards">
-        <article class="card reveal">
-          <h3>Nettoyage de façades</h3>
-          <p>Élimination des salissures, lichens et dépôts avec précision.</p>
-        </article>
-        <article class="card reveal">
-          <h3>Toitures & panneaux solaires</h3>
-          <p>Rendement optimisé, accès sécurisés et rapides.</p>
-        </article>
-        <article class="card reveal">
-          <h3>Vitrages & bardages</h3>
-          <p>Finition impeccable pour grandes surfaces.</p>
-        </article>
-        <article class="card reveal">
-          <h3>Inspection & reporting</h3>
-          <p>Photos/vidéos HD, rapports clairs et plan d’action.</p>
-        </article>
-        <article class="card reveal">
-          <h3>Interventions industrielles</h3>
-          <p>Sites sensibles, périmètres balisés, procédures strictes.</p>
-        </article>
-        <article class="card reveal">
-          <h3>Devis & diagnostic</h3>
-          <p>Évaluation rapide sur dossier ou repérage sur site.</p>
-        </article>
-      </div>
-      <div class="section" style="padding-top:34px">
-        <img class="reveal" src="assets/images/orange.jpg" alt="Drone de présentation">
-      </div>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container footer-wrap">
-      <small>© 2025 Dronet'Pro</small><small>Nettoyage & inspection par drone</small>
-    </div>
-  </footer>
-  <script src="assets/js/app.js"></script>
-</body>
-</html>
+    <form class="form" id="quote-form" action="" method="POST">
+      <input type="text" name="nom" placeholder="Nom / Société" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="tel" placeholder="Téléphone (optionnel)">
+      <select name="type_batiment" required>
+        <option value="">Type de bâtiment</option>
+        <option>Immeuble</option>
+        <option>Maison</option>
+        <option>Bureaux</option>
+        <option>Entrepôt</option>
+        <option>Autre</option>
+      </select>
+      <input type="number" name="surface" min="0" step="1" placeholder="Surface estimée (m²)">
+      <input type="text" name="ville" placeholder="Ville / Localisation">
+      <textarea name="message" rows="5" placeholder="Votre besoin, contraintes, délais…"></textarea>
+      <button class="btn btn-primary" type="submit">Envoyer</button>
+      <div class="note" id="form-status"></div>
+      <div class="note">Astuce : créez votre endpoint sur Formspree.io et collez son URL dans l’attribut <code>action</code> du formulaire.</div>
+    </form>
+  </div>
+</div>
+</body></html>
